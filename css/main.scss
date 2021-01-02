@@ -266,7 +266,9 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
-    .result {
+    #choose-level,
+    #level-details,
+    #result {
         width: 70%;
     }
 }

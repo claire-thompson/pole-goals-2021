@@ -25,47 +25,42 @@
 <body>
 
   <!-- Add your site or application content here -->
-  <header>
-    <div class="logo"><a href="https://www.workitfit.com/"><img src="img/wif_logo_floating_x2.png"
-          alt="Work It Dance and Fitness"></a></div>
-  </header>
-
   <section class="main-content">
     <div class="about">
       <h1>Pole Goals 2021</h1>
       <h5>by Work It Dance and Fitness</h5>
       <h3>What pole trick should you master this year?</h3>
     </div>
-    <div class="choose-level">
+    <div id="choose-level">
       <h3>Choose Your Level:</h3>
-      <button id="beginner">Beginner</button>
-      <button id="intermediate">Intermediate</button>
-      <button id="advanced">Advanced</button>
-      <button id="extreme">Extreme</button>
+      <button onClick="beginnerResult()">Beginner</button>
+      <button onClick="intermediateResult()">Intermediate</button>
+      <button onClick="advancedResult()">Advanced</button>
+      <button onClick="extremeResult()">Extreme</button>
       <p id="level-explainer">Not sure what level you are?</p>
       <div id="level-details">
         <h5>Beginner</h5>
-        <p>I’m new to pole and cannot invert, or I’m learning inverts, but cannot yet perform them consistently or
-          cleanly.</p>
+        <p>I’m new to pole and am still learning or mastering basic spins, tricks, and climbs. I cannot invert.</p>
         <h5>Intermediate</h5>
-        <p>I can invert confidently and cleanly from the ground, but cannot yet perform aerial inverts consistently or
-          cleanly.</p>
+        <p>I've been poling for a while and can sit on the pole, invert, and perform a variety of spins and tricks.</p>
         <h5>Advanced</h5>
-        <p>I can invert confidently from the air, but cannot yet hold handsprings consistently or cleanly.</p>
+        <p>I'm a confident and experienced poler who can perform aerial inverts and tricks with two or fewer points of
+          contact.</p>
         <h5>Extreme</h5>
-        <p>I can perform moves with 2 points of contact, such as handspring, ayesha, or cocoon.</p>
+        <p>I'm a confident and experienced poler who can perform aerial inverts and tricks with two or fewer points of
+          contact.</p>
       </div>
     </div>
-    <div class="result">
+    <div id="result">
       <h3>Your 2021 Goal is...</h3>
       <div class="trick">
         <h2 id="trick-name"></h2>
         <img src="" id="trick-image"></img>
         <p>Already mastered this trick?</p>
-        <button id="reset">Try again!</button>
+        <button onClick="reset()">Try again!</button>
       </div>
       <div class="cta">
-        <p>Start working toward your goal now by signing up for a class online or at our Norwalk, CT studio!</p>
+        <p>Start working toward your goal now by signing up for a class at our Norwalk, CT studio!</p>
         <button><a href="https://clients.mindbodyonline.com/asp/home.asp?studioid=11404">Sign me up!</a></button>
         <p>or</p>
         <button><a href="https://www.workitfit.com/">Learn more about Work It</a></button>
@@ -73,7 +68,11 @@
     </div>
   </section>
 
-  <footer></footer>
+  <footer>
+    <div class="logo"><a href="https://www.workitfit.com/"><img src="img/wif_logo_floating_x2.png"
+          alt="Work It Dance and Fitness"></a></div>
+    <div class="attribution">Website created by Claire Thompson for Work It Dance and Fitness</div>
+  </footer>
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>

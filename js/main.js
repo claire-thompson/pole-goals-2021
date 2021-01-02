@@ -1,4 +1,4 @@
-let [chooseLevel, levelExplainer, levelDetails, result, trickName, trickImage] = ['choose-level', 'level-explainer', 'level-details', 'result', 'trick-name', 'trick-image'].map(id => document.getElementById(id));
+let [chooseLevel, levelDetails, result, trickName, trickImage] = ['choose-level', 'level-details', 'result', 'trick-name', 'trick-image'].map(id => document.getElementById(id));
 
 let beginnerTricks = ['Attitude Spin', 'Back Hook', 'Basic Climb', 'Chair Spin', 'Chopper', 'Cradle Spin', 'Dip', 'Drama Queen', 'Fan Kick', 'Fireman Spin', 'Front Hook', 'Hello Boys', 'Knee Spin', 'Martini Spin', 'Pirouette', 'Pole Sit', 'Reverse Stag Spin', 'Reverse Sunwheel', 'Scissor Sit', 'Secretary Sit', 'Secretary Spin', 'Stag Spin', 'Sunwheel'];
 let intermediateTricks = ['Anastasia Frog', 'Assisted Pencil Spin', 'Baby Valentine', 'Ballerina Spin', 'Brass Monkey', 'Butterfly', 'Carousel Spin', 'Closed Rainbow', 'Corkscrew Spin', 'Cross Knee Layback', 'Crucifix', 'Cupid', 'Dive Down', 'Eros', 'Fairy Sit', 'Figurehead', 'Flag Dismount', 'Flatline Scorpio', 'Genie', 'Hood Ornament', 'Jamilla', 'Jasmine', 'Juliet Spin', 'Knee Hold', 'Knee Swing', 'Marley', 'One Leg Crucifix', 'Outside Leg Hang', 'Pike Hip Hold', 'Reiko', 'Reiko Mount', 'Remi Layback', 'Remi Sit', 'Reverse Grab Spin', 'Side Climb', 'Sit Spin', 'Split Grip Splits', 'Stargazer', 'Straddle Spin', 'Superman', 'Switch Leap', 'Upright Split Grip Straddle', 'Z Pose'];
@@ -77,6 +77,14 @@ function extremeResult() {
     trickName.innerHTML = trick;
     trickImage.src = image;
 };
+
+function explainLevels() {
+    levelDetails.style.display = 'block';
+}
+
+function closeExplain() {
+    levelDetails.style.display = 'none';
+}
 
 function reset() {
     chooseLevel.style.display = 'block';

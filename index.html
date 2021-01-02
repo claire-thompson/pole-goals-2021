@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Pole Goals 2021</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -37,7 +37,7 @@
       <button onClick="intermediateResult()">Intermediate</button>
       <button onClick="advancedResult()">Advanced</button>
       <button onClick="extremeResult()">Extreme</button>
-      <p id="level-explainer">Not sure what level you are?</p>
+      <p onClick="explainLevels()">Not sure what level you are?</p>
       <div id="level-details">
         <h5>Beginner</h5>
         <p>I’m new to pole and am still learning or mastering basic spins, tricks, and climbs. I cannot invert.</p>
@@ -47,8 +47,9 @@
         <p>I'm a confident and experienced poler who can perform aerial inverts and tricks with two or fewer points of
           contact.</p>
         <h5>Extreme</h5>
-        <p>I'm a confident and experienced poler who can perform aerial inverts and tricks with two or fewer points of
-          contact.</p>
+        <p>I'm a very confident, expert poler who can perform a variety of aerial tricks and tricks with two or fewer
+          points of contact.</p>
+        <button onClick="closeExplain()">Close</button>
       </div>
     </div>
     <div id="result">
